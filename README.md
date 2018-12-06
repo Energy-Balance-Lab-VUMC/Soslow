@@ -7,6 +7,8 @@ Codebase for Actimetry Core in the Soslow study.
 * Wear Detection
   * use 15 second level files to detect wear status
   * use vector magnitude
+* Valid Day
+  * During 0500 - 2359, at least 600 minutes of wearing
 * Sleep Detection
   * aggregate to 60 second level and then run sleep algorithm
   * map the results back to 15 second level data
