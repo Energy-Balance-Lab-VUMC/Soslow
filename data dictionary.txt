@@ -1,0 +1,357 @@
+Data Dictionary for "summary_by_subject.csv"
+
+
+-------------------------------------------------------------------------------------------------
+COLUMN NAME				|| DESCRIPTION
+-------------------------------------------------------------------------------------------------
+id					|| subject id number
+visit					|| indicates which visit
+
+start					|| actigraph record start date, after throwing away invalid days
+end					|| actigraph record start date, after throwing away invalid days
+days					|| number of days in actigraph record
+n_wk					|| number of week days
+n_wknd					|| number of weekend days
+
+wear_sec				|| the amount of time (in seconds) that subject wore actigraph
+sleep_sec				|| the amount of time (in seconds) that subject wore actigraph and was awake
+awake_sec				|| the amount of time (in seconds) that subject wore actigraph and was sleep
+
+wrist_vm_per_wear_min			|| vector magnitude per wearing minutes
+wrist_vm_per_awake_min			|| vector magnitude per awake minutes
+wrist_vm_per_sleep_min			|| vector magnitude per asleep minutes
+
+ankle_vm_per_wear_min			|| vector magnitude per wearing minutes
+ankle_vm_per_awake_min			|| vector magnitude per awake minutes
+ankle_vm_per_sleep_min			|| vector magnitude per asleep minutes
+
+wrist_vm				|| sum of wrist vector magnitude during wearing
+wrist_vm_awake				|| sum of wrist vector magnitude during awake
+wrist_vm_sleep				|| sum of wrist vector magnitude during sleep
+
+ankle_vm				|| sum of ankle vector magnitude during wearing
+ankle_vm_awake				|| sum of ankle vector magnitude during awake
+ankle_vm_sleep				|| sum of ankle vector magnitude during sleep
+
+sedentary_1_ratio			|| percentage of awake time spent in sedentary 1
+sedentary_2_ratio			|| percentage of awake time spent in sedentary 2
+sedentary_3_ratio			|| percentage of awake time spent in sedentary 3
+low_intensity_1_ratio			|| percentage of awake time spent in low intensity 1 
+low_intensity_2_ratio			|| percentage of awake time spent in low intensity 2
+moderate_intensity_ratio		|| percentage of awake time spent in moderate intensity
+vigorous_intensity_ratio		|| percentage of awake time spent in vigorous intensity
+
+sedentary_1				|| while awake, the sum of vector magnitude in sedentary 1
+sedentary_2				|| while awake, the sum of vector magnitude in sedentary 2
+sedentary_3				|| while awake, the sum of vector magnitude in sedentary 3
+low_intensity_1				|| while awake, the sum of vector magnitude in low intensity 1 
+low_intensity_2				|| while awake, the sum of vector magnitude in low intensity 2
+moderate_intensity			|| while awake, the sum of vector magnitude in moderate intensity
+vigorous_intensity			|| while awake, the sum of vector magnitude in vigorous intensity
+
+sedentary_1_sec				|| awake seconds spent in sedentary 1
+sedentary_2_sec				|| awake seconds spent in sedentary 2
+sedentary_3_sec				|| awake seconds spent in sedentary 3
+low_intensity_1_sec			|| awake seconds spent in low intensity 1 
+low_intensity_2_sec			|| awake seconds spent in low intensity 2
+moderate_intensity_sec			|| awake seconds spent in moderate intensity
+vigorous_intensity_sec			|| awake seconds spent in vigorous intensity
+
+sedentary_1_per_min			|| average counts per minute spent in sedentary 1
+sedentary_2_per_min			|| average counts per minute spent in sedentary 2
+sedentary_3_per_min			|| average counts per minute spent in sedentary 3
+low_intensity_1_per_min			|| average counts per minute spent in low intensity 1 
+low_intensity_2_per_min			|| average counts per minute spent in low intensity 2
+moderate_intensity_per_min		|| average counts per minute spent in moderate intensity
+vigorous_intensity_per_min		|| average counts per minute spent in vigorous intensity
+
+wrist_vm_per_awake_over_per_wear  	|| (vector magnitude per awake minutes) over (vector magnitude per wearing minutes)
+wrist_vm_per_awake_over_per_sleep 	|| (vector magnitude per awake minutes) over (vector magnitude per asleep minutes)
+ankle_vm_per_awake_over_per_wear  	|| (vector magnitude per awake minutes) over (vector magnitude per wearing minutes)
+ankle_vm_per_awake_over_per_sleep 	|| (vector magnitude per awake minutes) over (vector magnitude per asleep minutes)
+
+-------------------------------------------------------------------------------------------------
+WEEK DAYS
+-------------------------------------------------------------------------------------------------
+wk_wear_sec				|| [week days] the amount of time (in seconds) that subject wore actigraph
+wk_sleep_sec				|| [week days] the amount of time (in seconds) that subject wore actigraph and was awake
+wk_awake_sec				|| [week days] the amount of time (in seconds) that subject wore actigraph and was sleep
+
+wk_wrist_vm_per_wear_min		|| [week days] vector magnitude per wearing minutes
+wk_wrist_vm_per_awake_min		|| [week days] vector magnitude per awake minutes
+wk_wrist_vm_per_sleep_min		|| [week days] vector magnitude per asleep minutes
+
+wk_ankle_vm_per_wear_min		|| [week days] vector magnitude per wearing minutes
+wk_ankle_vm_per_awake_min		|| [week days] vector magnitude per awake minutes
+wk_ankle_vm_per_sleep_min		|| [week days] vector magnitude per asleep minutes
+
+wk_wrist_vm				|| [week days] sum of wrist vector magnitude during wearing
+wk_wrist_vm_awake			|| [week days] sum of wrist vector magnitude during awake
+wk_wrist_vm_sleep			|| [week days] sum of wrist vector magnitude during sleep
+
+wk_ankle_vm				|| [week days] sum of ankle vector magnitude during wearing
+wk_ankle_vm_awake			|| [week days] sum of ankle vector magnitude during awake
+wk_ankle_vm_sleep			|| [week days] sum of ankle vector magnitude during sleep
+
+wk_sedentary_1_ratio			|| [week days] percentage of awake time spent in sedentary 1
+wk_sedentary_2_ratio			|| [week days] percentage of awake time spent in sedentary 2
+wk_sedentary_3_ratio			|| [week days] percentage of awake time spent in sedentary 3
+wk_low_intensity_1_ratio		|| [week days] percentage of awake time spent in low intensity 1 
+wk_low_intensity_2_ratio		|| [week days] percentage of awake time spent in low intensity 2
+wk_moderate_intensity_ratio		|| [week days] percentage of awake time spent in moderate intensity
+wk_vigorous_intensity_ratio		|| [week days] percentage of awake time spent in vigorous intensity
+
+wk_sedentary_1				|| [week days] while awake, the sum of vector magnitude in sedentary 1
+wk_sedentary_2				|| [week days] while awake, the sum of vector magnitude in sedentary 2
+wk_sedentary_3				|| [week days] while awake, the sum of vector magnitude in sedentary 3
+wk_low_intensity_1			|| [week days] while awake, the sum of vector magnitude in low intensity 1 
+wk_low_intensity_2			|| [week days] while awake, the sum of vector magnitude in low intensity 2
+wk_moderate_intensity			|| [week days] while awake, the sum of vector magnitude in moderate intensity
+wk_vigorous_intensity			|| [week days] while awake, the sum of vector magnitude in vigorous intensity
+
+wk_sedentary_1_sec			|| [week days] awake seconds spent in sedentary 1
+wk_sedentary_2_sec			|| [week days] awake seconds spent in sedentary 2
+wk_sedentary_3_sec			|| [week days] awake seconds spent in sedentary 3
+wk_low_intensity_1_sec			|| [week days] awake seconds spent in low intensity 1 
+wk_low_intensity_2_sec			|| [week days] awake seconds spent in low intensity 2
+wk_moderate_intensity_sec		|| [week days] awake seconds spent in moderate intensity
+wk_vigorous_intensity_sec		|| [week days] awake seconds spent in vigorous intensity
+
+-------------------------------------------------------------------------------------------------
+WEEKEND DAYS
+-------------------------------------------------------------------------------------------------
+wknd_wear_sec				|| [weekend days] the amount of time (in seconds) that subject wore actigraph
+wknd_sleep_sec				|| [weekend days] the amount of time (in seconds) that subject wore actigraph and was awake
+wknd_awake_sec				|| [weekend days] the amount of time (in seconds) that subject wore actigraph and was sleep
+
+wknd_wrist_vm_per_wear_min		|| [weekend days] vector magnitude per wearing minutes
+wknd_wrist_vm_per_awake_min		|| [weekend days] vector magnitude per awake minutes
+wknd_wrist_vm_per_sleep_min		|| [weekend days] vector magnitude per asleep minutes
+
+wknd_ankle_vm_per_wear_min		|| [weekend days] vector magnitude per wearing minutes
+wknd_ankle_vm_per_awake_min		|| [weekend days] vector magnitude per awake minutes
+wknd_ankle_vm_per_sleep_min		|| [weekend days] vector magnitude per asleep minutes
+
+wknd_wrist_vm				|| [weekend days] sum of wrist vector magnitude during wearing
+wknd_wrist_vm_awake			|| [weekend days] sum of wrist vector magnitude during awake
+wknd_wrist_vm_sleep			|| [weekend days] sum of wrist vector magnitude during sleep
+
+wknd_ankle_vm				|| [weekend days] sum of ankle vector magnitude during wearing
+wknd_ankle_vm_awake			|| [weekend days] sum of ankle vector magnitude during awake
+wknd_ankle_vm_sleep			|| [weekend days] sum of ankle vector magnitude during sleep
+
+wknd_sedentary_1_ratio			|| [weekend days] percentage of awake time spent in sedentary 1
+wknd_sedentary_2_ratio			|| [weekend days] percentage of awake time spent in sedentary 2
+wknd_sedentary_3_ratio			|| [weekend days] percentage of awake time spent in sedentary 3
+wknd_low_intensity_1_ratio		|| [weekend days] percentage of awake time spent in low intensity 1 
+wknd_low_intensity_2_ratio		|| [weekend days] percentage of awake time spent in low intensity 2
+wknd_moderate_intensity_ratio		|| [weekend days] percentage of awake time spent in moderate intensity
+wknd_vigorous_intensity_ratio		|| [weekend days] percentage of awake time spent in vigorous intensity
+
+wknd_sedentary_1			|| [weekend days] while awake, the sum of vector magnitude in sedentary 1
+wknd_sedentary_2			|| [weekend days] while awake, the sum of vector magnitude in sedentary 2
+wknd_sedentary_3			|| [weekend days] while awake, the sum of vector magnitude in sedentary 3
+wknd_low_intensity_1			|| [weekend days] while awake, the sum of vector magnitude in low intensity 1 
+wknd_low_intensity_2			|| [weekend days] while awake, the sum of vector magnitude in low intensity 2
+wknd_moderate_intensity			|| [weekend days] while awake, the sum of vector magnitude in moderate intensity
+wknd_vigorous_intensity			|| [weekend days] while awake, the sum of vector magnitude in vigorous intensity
+
+wknd_sedentary_1_sec			|| [weekend days] awake seconds spent in sedentary 1
+wknd_sedentary_2_sec			|| [weekend days] awake seconds spent in sedentary 2
+wknd_sedentary_3_sec			|| [weekend days] awake seconds spent in sedentary 3
+wknd_low_intensity_1_sec		|| [weekend days] awake seconds spent in low intensity 1 
+wknd_low_intensity_2_sec		|| [weekend days] awake seconds spent in low intensity 2
+wknd_moderate_intensity_sec		|| [weekend days] awake seconds spent in moderate intensity
+wknd_vigorous_intensity_sec		|| [weekend days] awake seconds spent in vigorous intensity
+
+-------------------------------------------------------------------------------------------------
+SECTION 1: 0700-1200
+-------------------------------------------------------------------------------------------------
+s1_wear_sec				|| [0700-1200] the amount of time (in seconds) that subject wore actigraph
+s1_sleep_sec				|| [0700-1200] the amount of time (in seconds) that subject wore actigraph and was awake
+s1_awake_sec				|| [0700-1200] the amount of time (in seconds) that subject wore actigraph and was sleep
+
+s1_wrist_vm_per_wear_min		|| [0700-1200] vector magnitude per wearing minutes
+s1_wrist_vm_per_awake_min		|| [0700-1200] vector magnitude per awake minutes
+s1_wrist_vm_per_sleep_min		|| [0700-1200] vector magnitude per asleep minutes
+
+s1_ankle_vm_per_wear_min		|| [0700-1200] vector magnitude per wearing minutes
+s1_ankle_vm_per_awake_min		|| [0700-1200] vector magnitude per awake minutes
+s1_ankle_vm_per_sleep_min		|| [0700-1200] vector magnitude per asleep minutes
+
+s1_wrist_vm				|| [0700-1200] sum of wrist vector magnitude during wearing
+s1_wrist_vm_awake			|| [0700-1200] sum of wrist vector magnitude during awake
+s1_wrist_vm_sleep			|| [0700-1200] sum of wrist vector magnitude during sleep
+
+s1_ankle_vm				|| [0700-1200] sum of ankle vector magnitude during wearing
+s1_ankle_vm_awake			|| [0700-1200] sum of ankle vector magnitude during awake
+s1_ankle_vm_sleep			|| [0700-1200] sum of ankle vector magnitude during sleep
+
+s1_sedentary_1_ratio			|| [0700-1200] percentage of awake time spent in sedentary 1
+s1_sedentary_2_ratio			|| [0700-1200] percentage of awake time spent in sedentary 2
+s1_sedentary_3_ratio			|| [0700-1200] percentage of awake time spent in sedentary 3
+s1_low_intensity_1_ratio		|| [0700-1200] percentage of awake time spent in low intensity 1 
+s1_low_intensity_2_ratio		|| [0700-1200] percentage of awake time spent in low intensity 2
+s1_moderate_intensity_ratio		|| [0700-1200] percentage of awake time spent in moderate intensity
+s1_vigorous_intensity_ratio		|| [0700-1200] percentage of awake time spent in vigorous intensity
+
+s1_sedentary_1				|| [0700-1200] while awake, the sum of vector magnitude in sedentary 1
+s1_sedentary_2				|| [0700-1200] while awake, the sum of vector magnitude in sedentary 2
+s1_sedentary_3				|| [0700-1200] while awake, the sum of vector magnitude in sedentary 3
+s1_low_intensity_1			|| [0700-1200] while awake, the sum of vector magnitude in low intensity 1 
+s1_low_intensity_2			|| [0700-1200] while awake, the sum of vector magnitude in low intensity 2
+s1_moderate_intensity			|| [0700-1200] while awake, the sum of vector magnitude in moderate intensity
+s1_vigorous_intensity			|| [0700-1200] while awake, the sum of vector magnitude in vigorous intensity
+
+s1_sedentary_1_sec			|| [0700-1200] awake seconds spent in sedentary 1
+s1_sedentary_2_sec			|| [0700-1200] awake seconds spent in sedentary 2
+s1_sedentary_3_sec			|| [0700-1200] awake seconds spent in sedentary 3
+s1_low_intensity_1_sec			|| [0700-1200] awake seconds spent in low intensity 1 
+s1_low_intensity_2_sec			|| [0700-1200] awake seconds spent in low intensity 2
+s1_moderate_intensity_sec		|| [0700-1200] awake seconds spent in moderate intensity
+s1_vigorous_intensity_sec		|| [0700-1200] awake seconds spent in vigorous intensity
+
+-------------------------------------------------------------------------------------------------
+SECTION 2: 1200-1500
+-------------------------------------------------------------------------------------------------
+s2_wear_sec				|| [1200-1500] the amount of time (in seconds) that subject wore actigraph
+s2_sleep_sec				|| [1200-1500] the amount of time (in seconds) that subject wore actigraph and was awake
+s2_awake_sec				|| [1200-1500] the amount of time (in seconds) that subject wore actigraph and was sleep
+
+s2_wrist_vm_per_wear_min		|| [1200-1500] vector magnitude per wearing minutes
+s2_wrist_vm_per_awake_min		|| [1200-1500] vector magnitude per awake minutes
+s2_wrist_vm_per_sleep_min		|| [1200-1500] vector magnitude per asleep minutes
+
+s2_ankle_vm_per_wear_min		|| [1200-1500] vector magnitude per wearing minutes
+s2_ankle_vm_per_awake_min		|| [1200-1500] vector magnitude per awake minutes
+s2_ankle_vm_per_sleep_min		|| [1200-1500] vector magnitude per asleep minutes
+
+s2_wrist_vm				|| [1200-1500] sum of wrist vector magnitude during wearing
+s2_wrist_vm_awake			|| [1200-1500] sum of wrist vector magnitude during awake
+s2_wrist_vm_sleep			|| [1200-1500] sum of wrist vector magnitude during sleep
+
+s2_ankle_vm				|| [1200-1500] sum of ankle vector magnitude during wearing
+s2_ankle_vm_awake			|| [1200-1500] sum of ankle vector magnitude during awake
+s2_ankle_vm_sleep			|| [1200-1500] sum of ankle vector magnitude during sleep
+
+s2_sedentary_1_ratio			|| [1200-1500] percentage of awake time spent in sedentary 1
+s2_sedentary_2_ratio			|| [1200-1500] percentage of awake time spent in sedentary 2
+s2_sedentary_3_ratio			|| [1200-1500] percentage of awake time spent in sedentary 3
+s2_low_intensity_1_ratio		|| [1200-1500] percentage of awake time spent in low intensity 1 
+s2_low_intensity_2_ratio		|| [1200-1500] percentage of awake time spent in low intensity 2
+s2_moderate_intensity_ratio		|| [1200-1500] percentage of awake time spent in moderate intensity
+s2_vigorous_intensity_ratio		|| [1200-1500] percentage of awake time spent in vigorous intensity
+
+s2_sedentary_1				|| [1200-1500] while awake, the sum of vector magnitude in sedentary 1
+s2_sedentary_2				|| [1200-1500] while awake, the sum of vector magnitude in sedentary 2
+s2_sedentary_3				|| [1200-1500] while awake, the sum of vector magnitude in sedentary 3
+s2_low_intensity_1			|| [1200-1500] while awake, the sum of vector magnitude in low intensity 1 
+s2_low_intensity_2			|| [1200-1500] while awake, the sum of vector magnitude in low intensity 2
+s2_moderate_intensity			|| [1200-1500] while awake, the sum of vector magnitude in moderate intensity
+s2_vigorous_intensity			|| [1200-1500] while awake, the sum of vector magnitude in vigorous intensity
+
+s2_sedentary_1_sec			|| [1200-1500] awake seconds spent in sedentary 1
+s2_sedentary_2_sec			|| [1200-1500] awake seconds spent in sedentary 2
+s2_sedentary_3_sec			|| [1200-1500] awake seconds spent in sedentary 3
+s2_low_intensity_1_sec			|| [1200-1500] awake seconds spent in low intensity 1 
+s2_low_intensity_2_sec			|| [1200-1500] awake seconds spent in low intensity 2
+s2_moderate_intensity_sec		|| [1200-1500] awake seconds spent in moderate intensity
+s2_vigorous_intensity_sec		|| [1200-1500] awake seconds spent in vigorous intensity
+
+-------------------------------------------------------------------------------------------------
+SECTION 3: 1500-1900
+-------------------------------------------------------------------------------------------------
+s3_wear_sec				|| [1500-1900] the amount of time (in seconds) that subject wore actigraph
+s3_sleep_sec				|| [1500-1900] the amount of time (in seconds) that subject wore actigraph and was awake
+s3_awake_sec				|| [1500-1900] the amount of time (in seconds) that subject wore actigraph and was sleep
+
+s3_wrist_vm_per_wear_min		|| [1500-1900] vector magnitude per wearing minutes
+s3_wrist_vm_per_awake_min		|| [1500-1900] vector magnitude per awake minutes
+s3_wrist_vm_per_sleep_min		|| [1500-1900] vector magnitude per asleep minutes
+
+s3_ankle_vm_per_wear_min		|| [1500-1900] vector magnitude per wearing minutes
+s3_ankle_vm_per_awake_min		|| [1500-1900] vector magnitude per awake minutes
+s3_ankle_vm_per_sleep_min		|| [1500-1900] vector magnitude per asleep minutes
+
+s3_wrist_vm				|| [1500-1900] sum of wrist vector magnitude during wearing
+s3_wrist_vm_awake			|| [1500-1900] sum of wrist vector magnitude during awake
+s3_wrist_vm_sleep			|| [1500-1900] sum of wrist vector magnitude during sleep
+
+s3_ankle_vm				|| [1500-1900] sum of ankle vector magnitude during wearing
+s3_ankle_vm_awake			|| [1500-1900] sum of ankle vector magnitude during awake
+s3_ankle_vm_sleep			|| [1500-1900] sum of ankle vector magnitude during sleep
+
+s3_sedentary_1_ratio			|| [1500-1900] percentage of awake time spent in sedentary 1
+s3_sedentary_2_ratio			|| [1500-1900] percentage of awake time spent in sedentary 2
+s3_sedentary_3_ratio			|| [1500-1900] percentage of awake time spent in sedentary 3
+s3_low_intensity_1_ratio		|| [1500-1900] percentage of awake time spent in low intensity 1 
+s3_low_intensity_2_ratio		|| [1500-1900] percentage of awake time spent in low intensity 2
+s3_moderate_intensity_ratio		|| [1500-1900] percentage of awake time spent in moderate intensity
+s3_vigorous_intensity_ratio		|| [1500-1900] percentage of awake time spent in vigorous intensity
+
+s3_sedentary_1				|| [1500-1900] while awake, the sum of vector magnitude in sedentary 1
+s3_sedentary_2				|| [1500-1900] while awake, the sum of vector magnitude in sedentary 2
+s3_sedentary_3				|| [1500-1900] while awake, the sum of vector magnitude in sedentary 3
+s3_low_intensity_1			|| [1500-1900] while awake, the sum of vector magnitude in low intensity 1 
+s3_low_intensity_2			|| [1500-1900] while awake, the sum of vector magnitude in low intensity 2
+s3_moderate_intensity			|| [1500-1900] while awake, the sum of vector magnitude in moderate intensity
+s3_vigorous_intensity			|| [1500-1900] while awake, the sum of vector magnitude in vigorous intensity
+
+s3_sedentary_1_sec			|| [1500-1900] awake seconds spent in sedentary 1
+s3_sedentary_2_sec			|| [1500-1900] awake seconds spent in sedentary 2
+s3_sedentary_3_sec			|| [1500-1900] awake seconds spent in sedentary 3
+s3_low_intensity_1_sec			|| [1500-1900] awake seconds spent in low intensity 1 
+s3_low_intensity_2_sec			|| [1500-1900] awake seconds spent in low intensity 2
+s3_moderate_intensity_sec		|| [1500-1900] awake seconds spent in moderate intensity
+s3_vigorous_intensity_sec		|| [1500-1900] awake seconds spent in vigorous intensity
+
+-------------------------------------------------------------------------------------------------
+SECTION 4: 1900-2200
+-------------------------------------------------------------------------------------------------
+s4_wear_sec				|| [1900-2200] the amount of time (in seconds) that subject wore actigraph
+s4_sleep_sec				|| [1900-2200] the amount of time (in seconds) that subject wore actigraph and was awake
+s4_awake_sec				|| [1900-2200] the amount of time (in seconds) that subject wore actigraph and was sleep
+
+s4_wrist_vm_per_wear_min		|| [1900-2200] vector magnitude per wearing minutes
+s4_wrist_vm_per_awake_min		|| [1900-2200] vector magnitude per awake minutes
+s4_wrist_vm_per_sleep_min		|| [1900-2200] vector magnitude per asleep minutes
+
+s4_ankle_vm_per_wear_min		|| [1900-2200] vector magnitude per wearing minutes
+s4_ankle_vm_per_awake_min		|| [1900-2200] vector magnitude per awake minutes
+s4_ankle_vm_per_sleep_min		|| [1900-2200] vector magnitude per asleep minutes
+
+s4_wrist_vm				|| [1900-2200] sum of wrist vector magnitude during wearing
+s4_wrist_vm_awake			|| [1900-2200] sum of wrist vector magnitude during awake
+s4_wrist_vm_sleep			|| [1900-2200] sum of wrist vector magnitude during sleep
+
+s4_ankle_vm				|| [1900-2200] sum of ankle vector magnitude during wearing
+s4_ankle_vm_awake			|| [1900-2200] sum of ankle vector magnitude during awake
+s4_ankle_vm_sleep			|| [1900-2200] sum of ankle vector magnitude during sleep
+
+s4_sedentary_1_ratio			|| [1900-2200] percentage of awake time spent in sedentary 1
+s4_sedentary_2_ratio			|| [1900-2200] percentage of awake time spent in sedentary 2
+s4_sedentary_3_ratio			|| [1900-2200] percentage of awake time spent in sedentary 3
+s4_low_intensity_1_ratio		|| [1900-2200] percentage of awake time spent in low intensity 1 
+s4_low_intensity_2_ratio		|| [1900-2200] percentage of awake time spent in low intensity 2
+s4_moderate_intensity_ratio		|| [1900-2200] percentage of awake time spent in moderate intensity
+s4_vigorous_intensity_ratio		|| [1900-2200] percentage of awake time spent in vigorous intensity
+
+s4_sedentary_1				|| [1900-2200] while awake, the sum of vector magnitude in sedentary 1
+s4_sedentary_2				|| [1900-2200] while awake, the sum of vector magnitude in sedentary 2
+s4_sedentary_3				|| [1900-2200] while awake, the sum of vector magnitude in sedentary 3
+s4_low_intensity_1			|| [1900-2200] while awake, the sum of vector magnitude in low intensity 1 
+s4_low_intensity_2			|| [1900-2200] while awake, the sum of vector magnitude in low intensity 2
+s4_moderate_intensity			|| [1900-2200] while awake, the sum of vector magnitude in moderate intensity
+s4_vigorous_intensity			|| [1900-2200] while awake, the sum of vector magnitude in vigorous intensity
+
+s4_sedentary_1_sec			|| [1900-2200] awake seconds spent in sedentary 1
+s4_sedentary_2_sec			|| [1900-2200] awake seconds spent in sedentary 2
+s4_sedentary_3_sec			|| [1900-2200] awake seconds spent in sedentary 3
+s4_low_intensity_1_sec			|| [1900-2200] awake seconds spent in low intensity 1 
+s4_low_intensity_2_sec			|| [1900-2200] awake seconds spent in low intensity 2
+s4_moderate_intensity_sec		|| [1900-2200] awake seconds spent in moderate intensity
+s4_vigorous_intensity_sec		|| [1900-2200] awake seconds spent in vigorous intensity
+
+-------------------------------------------------------------------------------------------------
+
+
